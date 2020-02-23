@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>SumUj</title>
+        <script>
+        $(document).ready(function(){
+
+            $("#tit").fadeIn(1500);
+            $("#linkSPT").fadeIn(2500);
+            $("#LinkEDD").fadeIn(3000);
+            $("#Footer").fadeIn(3500);
+
+
+        });
+        </script>
+
+
+    </head>
+    <body bgcolor="#A9E2F3">
+
+
+        <script language="javascript">
+        function ChangeBgColor(){
+            document.getElementById("linkSPT").style="color:#000000;text-align:center;font-size: 400%;";
+        }
+        function ChangeBgColorOut(){
+            document.getElementById("linkSPT").style="color:#FFFFFF;text-align:center;font-size: 300%;";
+        }
+
+        function ChangeBgColor2(){
+            document.getElementById("LinkEDD").style="color:#000000;text-align:center;font-size: 400%;";
+        }
+        function ChangeBgColorOut2(){
+            document.getElementById("LinkEDD").style="color:#FFFFFF;text-align:center;font-size: 300%;";
+        }
+        function onClickSPT(){
+          window.open = ('http://140.113.73.98/SPT/index.html');
+        }
+        function visible2(){
+          //document.getElementById("img1").style="display:none"
+            document.getElementById("hideT").style="opacity:1"
+            //document.getElementById("img1").fadeIn(500);
+
+        }
+        function visibleout2(){
+          document.getElementById("hideT").style="opacity:0"
+            //$("#img1").fadeOut(500);
+
+
+        }
+        </script>
+
+
+
+        <script>
+        $('#linkSPT').click(function () {
+            window.open = ('http://140.113.73.98/SPT/index.html');
+        });
+        </script>
+
+
+
+        <div onmouseover="visible2()" onmouseout="visibleout2()" id="hideT" style="opacity:0">
+          <img id="img1" style=" " src="http://www.ifm.nctu.edu.tw/uploads/member_profile/avatar/5501449b7470005153d11400/19_821f6ebd.jpg">
+        </div>
+        <div id ="Box" style="width:500;height:1000; position: absolute; left:50%; top:20%; magin-top:-500px; margin-left:-250px; color:#0000FF;text-align:center;color:blue">
+
+            <div id ="tit" style="color:#FFFFFF;text-align:center;font-size: 1000%;font-weight: bold;display:none">
+              SumUj
+            </div>
+            <div style="height:500;color:#FFFFFF;text-align:center;font-size: 300%;"> </div>
+            <div onmouseover="ChangeBgColor()" onmouseout="ChangeBgColorOut()" onclick="location.href='http://140.113.73.98/SPT/index.html';" id = "linkSPT" class="linkSPT" style="color:#FFFFFF;text-align:center;font-size: 300%;display:none">
+              using SPT
+            </div>
+
+            <div onmouseover="ChangeBgColor2()" onmouseout="ChangeBgColorOut2()" onclick="location.href='http://140.113.73.98/EDD/index.html';" id = "LinkEDD" style="color:#FFFFFF;text-align:center;font-size: 300%;display:none">
+              using EDD
+            </div>
+        </div>
+
+
+        <div id ="Footer" style="color:#FFFFFF;text-align:center;font-size: 150%;height: 100px;position: absolute; left:50%;top:100%;margin-top: -100px;margin-left:-90px;display:none">
+          NCTU OTA LAB
+        </div>
+
+
+    </body>
+</html>
